@@ -20,7 +20,7 @@ db = SQLDatabase(engine)
 
 # LLM
 llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash-lite",
+    model="gemini-2.5-pro",
     temperature=0,
     google_api_key=st.secrets["GOOGLE_API_KEY"]
 )
@@ -74,4 +74,5 @@ if st.button("Get Answer") and question:
 
     except Exception as e:
         st.error(f"Error: {e}")
+
 
