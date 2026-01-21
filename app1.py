@@ -74,3 +74,4 @@ if st.button("Get Answer") and question:
 
     except Exception as e:
         st.error(f"Error: {e}")
+
